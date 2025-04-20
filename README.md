@@ -1,4 +1,4 @@
-# 🌐 Ajith's Portfolio
+# 🌐 My Portfolio
 
 Welcome to my personal portfolio website! Built to showcase my skills, projects, and journey as a passionate Full Stack Web Developer.
 
