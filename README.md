@@ -19,13 +19,14 @@ I’m a full stack developer who blends creativity with logic to craft sleek, re
 
 - Animated hero section for a dynamic first impression
 - Clean and responsive layout
-- "About Me" section describing my journey
+- "[About Me](https://ajith11399.vercel.app/#about)" section describing my journey
 - Projects showcase with live links
-- Contact form for easy communication
+- Contact form for easy communication(
 
 ## 📷 Preview
 
-![Portfolio Screenshot](https://ajith11399.vercel.app/preview-image.png) <!-- Replace with an actual image link if you have one -->
+![Portfolio Screenshot]![image](https://github.com/user-attachments/assets/5e143e23-23ee-48f5-8c8d-5c06a7b2800e)
+ <!-- Replace with an actual image link if you have one -->
 
 ## 📬 Contact
 
