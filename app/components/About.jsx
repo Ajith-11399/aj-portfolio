@@ -18,11 +18,11 @@ const About = () => {
 
             <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
                 
-                <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-64 sm:w-80 rounded-3xl max-w-none shadow-lg hover:-translate-y-2 duration-500'>
+                <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-64 sm:w-96 rounded-3xl max-w-none shadow-lg hover:-translate-y-2 duration-500'>
                     <Image src={assets.aj_img} className='w-full rounded-3xl' alt='user' />
                 </motion.div>
 
-                <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='flex-1'>
+                <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='flex flex-col'>
                     <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-2xl jetb'>
                         {infoList.map(({icon, title, description}, index) => (
                             <li key={index} className='rounded-xl p-6 cursor-pointer shadow-lg hover:bg-[#fcf4ff] hover:-translate-y-2 duration-500'>
@@ -42,7 +42,6 @@ const About = () => {
                             </li>
                         ))}
                     </ul>
-                
                 </motion.div>
             
             </div>

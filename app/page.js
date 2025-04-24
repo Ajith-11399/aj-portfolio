@@ -1,4 +1,5 @@
-'use client'
+"use client";
+import Head from "next/head";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -11,16 +12,17 @@ import Works from "./components/Works";
 export default function Home() {
   return (
     <>
-
-        <ScrollToTop />
-        <Navbar />
-        <Header />
-        <About />
-        <Services />
-        <Works />
-        <Contact />
-        <Footer />
-
+      <Head>
+        <link rel="icon" type="image/png" href="/project-icon.png" />
+      </Head>
+      <ScrollToTop />
+      <Navbar />
+      <Header />
+      <About />
+      <Services />
+      <Works />
+      <Contact />
+      <Footer />
     </>
   );
 }
