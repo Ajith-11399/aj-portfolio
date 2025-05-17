@@ -12,7 +12,7 @@ const Works = () => {
             <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='grid grid-cols-1 lg:grid-cols-2 text-center lg:text-start items-center'>
                 <div>
                     <h4 className='mb-2 text-lg jetb'>Welcom to My Portfolio</h4>
-                    <h2 className='text-5xl jetb'>My Core Services</h2>
+                    <h2 className='text-5xl jetb'>My Works</h2>
                 </div>
                 <p className='md:max-w-xl mx-auto mt-5 mb-10 jetb'>From front-end interfaces to back-end architecture, I create seamless digital experiences that deliver real value. Feel free to explore my projects and get in touch if you'd like to collaborate.</p>
             </motion.div>
