@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 import SectionTitle from '../components/SectionTitle';
 
 
-const getInTouch = () => {
+const GetInTouch = () => {
 
     const { socialMedia, setLoading } = useContext(AjContext);
 
@@ -70,4 +70,4 @@ const getInTouch = () => {
     
 };
 
-export default getInTouch;
+export default GetInTouch;

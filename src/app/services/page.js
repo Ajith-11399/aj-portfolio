@@ -5,7 +5,7 @@ import SectionTitle from '../components/SectionTitle';
 import { AjContext } from '../context/AjContext.jsx';
 import { motion } from 'motion/react';
 
-const services = () => {
+const Services = () => {
 
     const { servicesHome, setLoading } = useContext(AjContext);
     const [ services, setServices ] = useState([]);
@@ -101,4 +101,4 @@ const services = () => {
     );
 };
 
-export default services;
+export default Services;

@@ -1,7 +1,6 @@
 "use client";   
 import React, { useContext, useEffect, useState } from 'react';
 import { assets } from '@/assets/assets';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronsRight } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -30,10 +29,10 @@ const Footer = () => {
                 <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='bg-center bg-cover bg-no-repeat'>
                     <div className='bg-white/20 backdrop-blur-lg flex flex-col items-center justify-center pt-10'>
                         <div className='w-full px-5'>
-                            <div className='w-full flex flex-col items-start md:grid md:grid-cols-2 lg:grid-cols-5 gap-10 p-5'>
-                                <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full col-span-2 lg:col-span-1'>
+                            <div className='w-full flex flex-col items-start md:grid md:grid-cols-2 lg:grid-cols-2 gap-10 p-5'>
+                                <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full col-span-2 lg:col-span-2'>
                                     <Link href='/' className="flex items-center">
-                                        <Image src={assets.logo} className="w-[100px]" alt="Logo" />
+                                        <img src={assets.logo.src} className="w-[100px]" alt="Logo" />
                                         <p className="text-4xl font-normal text-shadow">Ajith</p>
                                     </Link>
                                 </motion.div>

@@ -8,7 +8,7 @@ import TechTools from '../components/TechTools';
 import { AjContext } from '../context/AjContext';
 import { motion } from 'motion/react';
 
-const about = () => {
+const About = () => {
 
     const { setLoading, timeline } = useContext(AjContext);
     const [ timeLine, setTimeLine ] = useState([]);
@@ -121,4 +121,4 @@ const about = () => {
 
 };
 
-export default about;
+export default About;
