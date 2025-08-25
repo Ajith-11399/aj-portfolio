@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #fff;
+}
+
+
+@theme inline {
+  --font-family-mont: var(--font-mont), sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #fff;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: var(--font-mont), sans-serif;
+}
+
+.mont {
+  font-family: var(--font-mont), sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #000080, #4169E1, #191970);
+  background-size: 800% 800%;
+}
+
+::selection{
+  color: #ffffff;
+  background: linear-gradient(270deg, #000080, #4169E1, #191970);
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(14deg);
+  }
+
+  30% {
+    transform: rotate(-8deg);
+  }
+
+  45% {
+    transform: rotate(14deg);
+  }
+
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave-hover:hover {
+  animation: wave 1s ease-in-out;
+  transform-origin: bottom right;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease forwards;
+}
+
+
+.button {
+  background: linear-gradient(to right bottom, #000, #1c398e);
+  color: #fff;
+  padding: 7px 18px;
+  text-align: center;
+}
+
+.button:hover {
+  background: linear-gradient(to right bottom, #1c398e, #000);
+  transition: 0.8s all ease-in-out;
+}
+
+@keyframes auroraFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-rgb {
+  background: linear-gradient(270deg, #000080, #4169E1, #191970);
+  background-size: 800% 800%;
+  animation: auroraFlow 10s ease infinite;
+  padding: 5px 20px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.bg-scroll {
+  background: linear-gradient(270deg, #000080, #4169E1, #191970);
+  background-size: 800% 800%;
+  animation: auroraFlow 10s ease infinite;
+}
+
+.features-icon {
+  background: linear-gradient(270deg, #000080, #4169E1, #191970);
+  background-size: 800% 800%;
+  animation: auroraFlow 10s ease infinite;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.border-rgb {
+  border: linear-gradient(270deg, #000080, #4169E1, #191970);
+  background-size: 800% 800%;
+  animation: auroraFlow 10s ease infinite;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text-shadow {
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination {
+  margin-top: 30px !important;
+}
+
+.swiper-3d .swiper-wrapper {
+  padding: 100px 0px;
+}
+
+.swiper-slide {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}

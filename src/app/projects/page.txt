@@ -1,0 +1,55 @@
+"use client"
+import React, { useEffect, useRef, useState } from 'react';
+
+const projects = () => {
+
+    const imageRef = useRef(null);
+    const sectionRef = useRef(null);
+    const [scale, setScale] = useState(1);
+
+    useEffect(() => {
+        const handleScroll = () => {    
+          if (!sectionRef.current) return;
+          const rect = sectionRef.current.getBoundingClientRect();
+          const progress = Math.min(Math.max(1 - rect.top / window.innerHeight, 0), 1);
+          setScale(0.6 + progress * 0.4);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+
+        <section className="flex flex-col pt-10">
+            <div ref={sectionRef} className="relative min-h-screen flex flex-col items-center justify-center px-5 lg:px-20 gap-10" >
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-50 to-transparent z-0" />
+
+                <div className='relative w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
+                    <h2 className='text-4xl font-bold'>
+                        Product Title
+                    </h2>
+                    <p className='text-sm'>
+                        This is a short description about the product or section. It will give
+                        more context about the image below while keeping things clean.
+                    </p>
+                </div>
+
+                <div ref={imageRef} style={{ transform: `scale(${scale})`, transformOrigin: "center center", }} className="relative z-0 w-full max-w-5xl rounded-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" >
+                    <img src="https://static.wixstatic.com/media/9f5a65_648a3f72bf704fd1ae07b6a4f6db53e9~mv2.jpg/v1/fill/w_1800,h_1014,al_c,q_85,enc_avif,quality_auto/PR-Kit_1200x1800_Multiple%20phones_angled_US.jpg" alt="Example" className="w-full h-auto object-cover rounded-2xl" />
+                </div>
+                <div className='w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10'>
+                    <div ref={imageRef} style={{ transform: `scale(${scale})`, transformOrigin: "center center", }} className="relative z-0 w-full max-w-5xl rounded-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" >
+                        <img src="https://static.wixstatic.com/media/9f5a65_648a3f72bf704fd1ae07b6a4f6db53e9~mv2.jpg/v1/fill/w_1800,h_1014,al_c,q_85,enc_avif,quality_auto/PR-Kit_1200x1800_Multiple%20phones_angled_US.jpg" alt="Example" className="w-full h-auto object-cover rounded-2xl" />
+                    </div>
+                    <div ref={imageRef} style={{ transform: `scale(${scale})`, transformOrigin: "center center", }} className="relative z-0 w-full max-w-5xl rounded-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" >
+                        <img src="https://static.wixstatic.com/media/9f5a65_648a3f72bf704fd1ae07b6a4f6db53e9~mv2.jpg/v1/fill/w_1800,h_1014,al_c,q_85,enc_avif,quality_auto/PR-Kit_1200x1800_Multiple%20phones_angled_US.jpg" alt="Example" className="w-full h-auto object-cover rounded-2xl" />
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+    );
+};
+
+export default projects;
