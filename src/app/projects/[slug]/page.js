@@ -14,18 +14,16 @@ const ProjectClient = () => {
     const { projectsHome, setLoading } = useContext(AjContext);
     const [project, setProject] = useState(null);
 
-    const fetchProject = async() => {
-        projectsHome.map((ele) => {
-            if (ele.slug === slug) {
-                setProject(ele);
-                return null;
-            };
-        });
-    };
-
-
     useEffect(() => {
         setLoading(true);
+        const fetchProject = async() => {
+            projectsHome.map((ele) => {
+                if (ele.slug === slug) {
+                    setProject(ele);
+                    return null;
+                };
+            });
+        };
         const timer = setTimeout(() => {
             fetchProject();
             setLoading(false);

@@ -17,7 +17,7 @@ const Services = () => {
             setLoading(false);
         }, 1500);
         return ()=> clearTimeout(timer);
-    }, [services]);
+    }, [servicesHome, setLoading]);
 
 
     return (
