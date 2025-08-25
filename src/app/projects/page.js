@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { motion } from 'motion/react';
 
 
-const page = () => {
+const ProjectsPage = () => {
 
     const { projectsHome, setLoading } = useContext(AjContext);
     const [ projects, setProjects ] = useState([]);
@@ -19,7 +19,7 @@ const page = () => {
             setLoading(false);
         }, 1500);
         return ()=> clearTimeout(timer);
-    }, []);
+    }, [projectsHome, setLoading]);
 
     return (
     
@@ -96,4 +96,4 @@ const page = () => {
 
 };
 
-export default page;
+export default ProjectsPage;

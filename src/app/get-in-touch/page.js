@@ -20,7 +20,7 @@ const GetInTouch = () => {
             setLoading(false); 
         }, 1500);
         return ()=> clearTimeout(timer);
-    }, [media]);
+    }, [socialMedia, setLoading]);
 
     
     

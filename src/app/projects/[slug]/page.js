@@ -31,7 +31,7 @@ const ProjectClient = () => {
             setLoading(false);
         }, 1500);
         return ()=> clearTimeout(timer);
-    }, [slug, projectsHome]);
+    }, [slug, projectsHome, setLoading]);
 
     
     return project ? (

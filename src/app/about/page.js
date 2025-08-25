@@ -20,7 +20,7 @@ const About = () => {
             setLoading(false);
         }, 1500);
         return ()=> clearTimeout(timer);
-    }, []);
+    }, [setLoading, timeline]);
 
     return (
     

@@ -27,7 +27,7 @@ export default function Homepage() {
         
         return ()=> clearTimeout(timer);
 
-    }, [proj, serv]);
+    }, [projectsHome, servicesHome, setLoading]);
 
 
     return (
