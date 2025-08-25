@@ -26,7 +26,7 @@ const Services = () => {
 
             {/* Hero Section */}
             <section className='w-full'>
-                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen relative bg-center bg-cover bg-no-repeat'>
+                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen bg-center bg-cover bg-no-repeat'>
                     <div className='absolute inset-0 bg-white/25 backdrop-blur-xl flex items-center justify-center px-5'>
                         <div className=''>
                             <SectionTitle

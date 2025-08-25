@@ -28,7 +28,7 @@ const About = () => {
             
             {/* About Section */}
             <section className='w-full'>
-                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen relative bg-cover bg-center bg-no-repeat'>
+                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen bg-cover bg-center bg-no-repeat'>
                     <div className='absolute inset-0 bg-white/25 backdrop-blur-xl px-5 flex items-center justify-center'>
                         <div className='flex flex-col items-center justify-center text-center text-black p-2'>
                             <SectionTitle 
@@ -47,8 +47,8 @@ const About = () => {
                     <div className='bg-white/25 backdrop-blur-xl w-full p-5 flex items-center justify-center'>
                         <div className='py-[100px]'>
                             <div className="w-full flex items-center justify-center">
-                                <div className="flex flex-col lg:flex-row items-center justify-center gap-10 text-center lg:text-left">
-                                    <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='px-5'>
+                                <div className="flex flex-col lg:flex-row items-center justify-center gap-10 text-left">
+                                    <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className=''>
                                         <img src={assets.overviewImg.src} alt="" className="rounded-lg shadow-lg w-full sm:w-[400px]" />
                                     </motion.div>
                                     <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}}>
@@ -77,9 +77,9 @@ const About = () => {
 
             {/* Timeline */}
             <section className='w-full'>
-                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='relative bg-cover bg-center bg-no-repeat'>
+                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='bg-cover bg-center bg-no-repeat'>
                     <div className='bg-white/25 backdrop-blur-xl px-5 flex items-center justify-center'>
-                        <div className='w-full pt-20'>
+                        <div className='w-full pt-20 flex flex-col items-center justify-center'>
                             <div className='mb-10'>
                                 <SectionTitle
                                     title='My Journey'

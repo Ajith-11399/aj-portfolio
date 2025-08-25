@@ -89,13 +89,13 @@ const Header = () => {
         
                 <ul 
                     ref={sideMenuRef} 
-                    className={`flex lg:hidden lg:rounded-2xl flex-col gap-2 px-5 pt-5 fixed text-md font-medium top-0 left-0 bottom-0 w-full h-screen backdrop-blur-lg bg-white/60 shadow-xl transition-transform duration-500 z-50
+                    className={`flex lg:hidden lg:rounded-2xl flex-col gap-2 px-5 pt-5 fixed text-md font-medium top-0 left-0 bottom-0 w-full h-screen   shadow-xl transition-transform duration-500 z-100
                     ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
                 >
                     
                     <div className="block lg:hidden">
                         <div className="flex items-center justify-between">
-                            <Link href='/' className="flex items-center gap-0">
+                            <Link href='/' onClick={closeMenu} className="flex items-center gap-0">
                                 <img src={assets.logo.src} className="w-[50px]" alt="Logo" />
                                 <p className="text-2xl font-normal text-shadow">Ajith</p>
                             </Link>
@@ -106,7 +106,7 @@ const Header = () => {
                         </div>
                     </div>
                       
-                    <li><Link href="/" onClick={closeMenu}>Home</Link></li>
+                    <li><Link href="/" >Home</Link></li>
                     <li><Link href="/projects" onClick={closeMenu}>My Crafts</Link></li>
                     <li><Link href="/services" onClick={closeMenu}>What I Offer</Link></li>
                     <li><Link href="/about" onClick={closeMenu}>About Me</Link></li>

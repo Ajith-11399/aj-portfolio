@@ -37,7 +37,7 @@ export default function Homepage() {
 
             {/* Hero Section */}
             <section className='w-full'>
-                <div style={{ backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen relative bg-cover bg-center bg-no-repeat'>
+                <div style={{ backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen bg-cover bg-center bg-no-repeat'>
                     <div className='absolute inset-0 bg-white/25 backdrop-blur-lg px-5 flex items-center justify-center'>
                         <div className='flex flex-col items-center justify-center text-center text-black p-2'>
                             <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='py-2 text-black/70'>Welcome to my portfolio!</motion.p>
@@ -154,7 +154,6 @@ export default function Homepage() {
                                             initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} 
                                             className='
                                                 bg-gradient-to-t from-white via-white/90 to-transparent rounded-xl overflow-hidden p-10
-                                                hover:shadow-[5px_5px_0px_0px_#6D28D9]
                                             '
                                         >
                                             <div className=''>

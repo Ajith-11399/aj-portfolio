@@ -27,7 +27,7 @@ const ProjectsPage = () => {
             
             {/* Hero Section */}
             <section className='w-full'>
-                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen relative bg-cover bg-center bg-no-repeat'>
+                <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen bg-cover bg-center bg-no-repeat'>
                     <div className='absolute inset-0 bg-white/25 backdrop-blur-xl flex items-center justify-center px-5'>
                         <div className='w-full flex items-center justify-center'>
                             <SectionTitle

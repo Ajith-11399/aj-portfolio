@@ -42,7 +42,7 @@ const ProjectClient = () => {
                 ? (
 
                     <section className="w-full">
-                        <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className="h-screen relative bg-cover bg-center bg-no-repeat">
+                        <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className="h-screen bg-cover bg-center bg-no-repeat">
                             <div className="absolute inset-0 bg-white/25 backdrop-blur-xl flex flex-col items-center justify-center px-5">
                                 <div className="flex flex-col items-center justify-center py-24 md:py-44 gap-10 md:gap-20">
                                     <SectionTitle
