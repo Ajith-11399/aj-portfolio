@@ -52,7 +52,6 @@ const About = () => {
                                         <img src={assets.overviewImg.src} alt="" className="rounded-lg shadow-lg w-full sm:w-[400px]" />
                                     </motion.div>
                                     <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}}>
-                                        <h1 className="text-4xl md:text-5xl font-medium mb-2 drop-shadow-lg">Hello, World!</h1>
                                         <div className="max-w-lg pt-5 text-sm text-black/70 flex flex-col gap-4">
                                             <p>
                                                 I’m Ajith, a passionate Full Stack Web Developer specializing in the MERN stack. With experience in building scalable applications, responsive UIs, and seamless digital solutions, I love turning ideas into impactful products. 

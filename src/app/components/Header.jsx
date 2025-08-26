@@ -78,7 +78,9 @@ const Header = () => {
         
                 <div className="flex items-center gap-4">
                     
-                    <Link href='/get-in-touch' className="text-md font-semibold bg-rgb shadow-lg rounded-2xl hidden lg:block">Get in Touch</Link>
+                    <Link href='/get-in-touch' className="text-md font-semibold bg-rgb shadow-lg rounded-2xl hidden lg:block">
+                        Get in Touch
+                    </Link>
         
                     <button className='block lg:hidden ml-3' onClick={openMenu}>
                         <Menu className="w-6 h-6"/>

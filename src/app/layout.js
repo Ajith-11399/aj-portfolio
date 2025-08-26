@@ -32,9 +32,9 @@ export const metadata = {
     "Portfolio",
   ],
   icons: {
-    icon: "/favicon.ico", 
-    shortcut: "/favicon-16x16.png", 
-    apple: "/apple-touch-icon.png", 
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Ajith D | Full-Stack Web Developer",

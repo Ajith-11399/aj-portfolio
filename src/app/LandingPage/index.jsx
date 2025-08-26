@@ -44,11 +44,11 @@ export default function Homepage() {
                             <motion.h1 initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full lg:w-3/4 text-4xl md:text-6xl py-4 font-medium text-center drop-shadow-lg'>
                                 Hello World, I’m Ajith
                             </motion.h1>
-                            <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full text-black/70 lg:w-3/4 text-base mt-5'>
+                            <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full text-black/70 lg:w-3/4 text-md leading-tight mt-3'>
                                 A passionate fullstack Web Developer, with hands-on experience in crafting modern, fast, and user-friendly web applications.
                             </motion.p>
-                            <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='flex items-center justify-center gap-7 mt-10'>
-                                <a href='#products' className='bg-rgb text-md flex items-center text-center rounded-2xl gap-2'>
+                            <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='flex items-center justify-center mt-10'>
+                                <a href='#projects' className='bg-rgb text-md flex items-center text-center rounded-2xl gap-1'>
                                     Explore
                                     <ChevronsRight />
                                 </a>
@@ -60,7 +60,7 @@ export default function Homepage() {
 
 
             {/* Overview section */}
-            <section id='products' className='w-full'>
+            <section className='w-full'>
                 <div style={{ backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='bg-cover bg-center bg-no-repeat'>
                     <div className='bg-white/25 backdrop-blur-xl w-full p-5 flex items-center justify-center'>
                         <div className='py-[100px]'>
@@ -70,20 +70,18 @@ export default function Homepage() {
                                         <img src={assets.overviewImg.src} alt="" className="rounded-lg shadow-lg w-full sm:w-[400px]" />
                                     </motion.div>
                                     <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}}>
-                                        <h1 className="text-4xl md:text-5xl font-medium mb-2 drop-shadow-lg">Hello, World!</h1>
-                                        <div className="max-w-lg pt-5 text-sm flex flex-col gap-4">
-                                            <p className='text-black/70'>
-                                                I’m Ajith, a passionate Full Stack Web Developer specializing in the MERN stack. With experience in building scalable applications, responsive UIs, and seamless digital solutions, I love turning ideas into impactful products. 
+                                        <h1 className="text-4xl md:text-5xl font-medium mb-2 drop-shadow-lg">Hi, I’m Ajith</h1>
+                                        <div className="max-w-lg pt-2 flex flex-col gap-4">
+                                            <p className='text-black/70 text-md leading-tight'>
+                                                A passionate Full Stack Web Developer specializing in the MERN stack. With experience in building scalable applications, responsive UIs, and seamless digital solutions, I love turning ideas into impactful products. 
                                             </p>
-                                            <p className='text-black/70'>
+                                            <p className='text-black/70 text-md leading-tight'>
                                                 Over the years, I’ve worked on projects like Blogify, NextHire, and Pixels, which showcase my skills in frontend design, backend logic, and modern web technologies. My focus is on crafting clean, user-friendly, and performance-driven applications that provide real value. 
                                             </p>
-                                            <div className=''>
-                                                <Link href='/about' className='w-fit bg-rgb text-md flex items-center text-center rounded-2xl'>
-                                                    Explore
-                                                    <ChevronsRight />
-                                                </Link>
-                                            </div>
+                                            <Link href='/about' className='w-fit bg-rgb text-md flex px-10 py-5 mt-5 items-center text-center rounded-2xl'>
+                                                Explore
+                                                <ChevronsRight />
+                                            </Link>
                                         </div>
                                     </motion.div>
                                 </div>
@@ -94,12 +92,8 @@ export default function Homepage() {
             </section>
 
 
-            {/* Tech and Tools */}
-            <TechTools />
-
-
             {/* Projects */}
-            <section className='w-full'>
+            <section id='projects' className='w-full'>
                 <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='bg-cover bg-center bg-no-repeat'>
                     <div className=' bg-white/20 backdrop-blur-lg flex flex-col items-center justify-center py-20'>
                         <div className='w-full max-w-6xl flex flex-col items-center justify-center gap-10'>
@@ -116,7 +110,7 @@ export default function Homepage() {
                                                  <div className='absolute inset-0 bg-white/30 backdrop-blur-[1px] bg-gradient-to-t from-white via-white/10 to-transparent'></div>
                                                  <div className='absolute bottom-0 p-10 z-10'>
                                                      <p className='text-xl font-semibold text-black'>{project.name}</p>
-                                                     <p className={`${project.descClass} text-base font-medium`}>{project.desc.length > 100 ? project.desc.slice(0, 80)+'...' : ''}</p>
+                                                     <p className={`${project.descClass} text-md font-medium leading-tight`}>{project.desc.length > 100 ? project.desc.slice(0, 80)+'...' : ''}</p>
                                                  </div>
                                             </Link>
                                         ) : (
@@ -161,7 +155,7 @@ export default function Homepage() {
                                             </div>
                                             <div className=''>
                                                 <p className='text-xl font-semibold text-black py-2'>{service.title}</p>
-                                                <p className='text-sm text-black/90'>{service.desc}</p>
+                                                <p className='text-md text-black/90 leading-tight'>{service.desc}</p>
                                             </div>
                                         </motion.div>
                                     ))
