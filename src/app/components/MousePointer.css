@@ -1,0 +1,27 @@
+Mouse pointer
+body {
+    cursor: none;
+}
+
+.cursor-dot {
+    width: 7px;
+    height: 7px;
+    background-color: #2b3ea4;
+}
+
+.cursor-pointer {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #2b3ea4;
+}
+
+.cursor-dot,
+.cursor-pointer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1000;
+    pointer-events: none;
+}

@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AjContextProvider from "./context/AjContext";
 import ClickToTop from "./components/ClickToTop";
 import FluidCursor from "./components/FluidCursor";
+import MousePointer from "./components/MousePointer";
 
 const mont = Montserrat({
   subsets: ["latin"],
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
       >
         <AjContextProvider>
           <FluidCursor />
+          <MousePointer />
           <Header />
           {children}
           <ClickToTop />
