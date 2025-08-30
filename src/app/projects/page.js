@@ -67,14 +67,14 @@ const ProjectsPage = () => {
                                                 <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className={`text-4xl font-medium drop-shadow-lg`}>
                                                     {project.name}
                                                 </motion.p>
-                                                <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='text-base text-black/70 font-normal max-w-3xl leading-5 pt-3'>
+                                                <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='text-base text-black/70 font-normal max-w-3xl leading-5 pt-2'>
                                                     {project.desc}
                                                 </motion.p>
                                                 {
                                                     project.slug === 'coming-soon'
                                                     ?   ''
-                                                    :   <Link href={`/projects/${project.slug}`} className='pt-5'>
-                                                            <motion.button initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='bg-rgb rounded-2xl shadow-xl cursor-pointer'>Know more</motion.button>
+                                                    :   <Link href={`/projects/${project.slug}`} className='mt-5 pointer-events-auto'>
+                                                            <motion.button initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='bg-rgb rounded-2xl shadow-xl'>Know more</motion.button>
                                                         </Link>
                                                 }
                                                 

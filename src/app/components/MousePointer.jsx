@@ -19,9 +19,9 @@ const MousePointer = () => {
             cursorDot.style.top = `${posY}px`;
 
             cursorOutline.animate(
-                 {left: `${posX}px`, top: `${posY}px`},
-                 { duration: 500, fill: 'forwards' }
-             );
+                {left: `${posX}px`, top: `${posY}px`},
+                {duration: 500, fill: 'forwards'}
+            );
 
         };
 
@@ -30,7 +30,7 @@ const MousePointer = () => {
     }, []);
 
     return (
-        <div className='fixed top-0 left-0 w-screen h-screen pointer-events-none z-50'>
+        <div className='fixed top-0 left-0 w-screen h-screen pointer-events-none z-50 hidden lg:flex'>
             <div className='cursor-dot' data-cursor-dot></div>
             <div className='cursor-pointer' data-cursor-outline></div>  
         </div>

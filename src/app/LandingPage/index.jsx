@@ -40,8 +40,8 @@ export default function Homepage() {
                 <div style={{ backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='h-screen bg-cover bg-center bg-no-repeat'>
                     <div className='absolute inset-0 bg-white/25 backdrop-blur-lg px-5 flex items-center justify-center'>
                         <div className='flex flex-col items-center justify-center text-center text-black p-2'>
-                            <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='py-2 text-black/70'>Welcome to my portfolio!</motion.p>
-                            <motion.h1 initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full lg:w-3/4 text-4xl md:text-6xl py-4 font-medium text-center drop-shadow-lg'>
+                            {/* <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='py-2 text-black/70'>Welcome to my portfolio!</motion.p> */}
+                            <motion.h1 initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full text-4xl md:text-6xl font-medium text-center drop-shadow-lg'>
                                 Hello World, I’m Ajith
                             </motion.h1>
                             <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full text-black/70 lg:w-3/4 text-md leading-tight mt-3'>
@@ -79,7 +79,7 @@ export default function Homepage() {
                                                 Over the years, I’ve worked on projects like Blogify, NextHire, and Pixels, which showcase my skills in frontend design, backend logic, and modern web technologies. My focus is on crafting clean, user-friendly, and performance-driven applications that provide real value. 
                                             </p>
                                             <Link href='/about' className='w-fit bg-rgb text-md flex px-10 py-5 mt-5 items-center text-center rounded-2xl'>
-                                                Explore
+                                                Explore My Journey
                                                 <ChevronsRight />
                                             </Link>
                                         </div>

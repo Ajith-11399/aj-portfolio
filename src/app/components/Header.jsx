@@ -18,6 +18,7 @@ const Header = () => {
     const closeMenu = () => setMenuOpen(false);
 
     useEffect(() => {
+
         const handleScroll = () => {
             if (window.scrollY >= 70) {
                 setIsScroll(true);
@@ -28,12 +29,16 @@ const Header = () => {
         
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
+    
     }, []);
 
 
     return (
 
         <>
+
+            {/* Navigation bar */}
+            <nav className={`fixed lg:top-4 lg:left-1/2 lg:-translate-x-1/2  w-full lg:max-w-[95%] flex items-center justify-between lg:rounded-2xl px-5 lg:px-8 py-2.5 z-10 ${isScroll ? "backdrop-blur-lg shadow-xl transition-all duration-500" : "backdrop-blur-none bg-none"} `}>
 
             {/* Scroll Progress */}
             <motion.div 
@@ -51,10 +56,6 @@ const Header = () => {
                 className="bg-scroll"
                 transition={{ duration: 0.3, ease: "easeInOut" }} 
             />
-
-
-            {/* Navigation bar */}
-            <nav className={`fixed lg:top-4 lg:left-1/2 lg:-translate-x-1/2  w-full lg:max-w-[95%] flex items-center justify-between lg:rounded-2xl px-5 lg:px-8 py-2.5 z-10 ${isScroll ? "backdrop-blur-lg bg-white/60 shadow-xl transition-all duration-500" : "backdrop-blur-none bg-none"} `}>
                 
                 <Link href='/' className="flex items-center gap-0">
                     <img src={assets.logo.src} className="w-[50px]" alt="Logo" />
@@ -91,11 +92,11 @@ const Header = () => {
         
                 <ul 
                     ref={sideMenuRef} 
-                    className={`flex lg:hidden lg:rounded-2xl flex-col gap-2 px-5 pt-5 fixed text-md font-medium top-0 left-0 bottom-0 w-full h-screen   shadow-xl transition-transform duration-500 z-100
+                    className={`flex lg:hidden lg:rounded-2xl flex-col gap-2 px-5 pt-5 fixed backdrop-blur-xl bg-[#fed6bd] text-md font-medium top-0 left-0 bottom-0 w-full h-screen shadow-xl transition-transform duration-500 z-100
                     ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
                 >
                     
-                    <div className="block lg:hidden">
+                    <div className="block lg:hidden mb-6">
                         <div className="flex items-center justify-between">
                             <Link href='/' onClick={closeMenu} className="flex items-center gap-0">
                                 <img src={assets.logo.src} className="w-[50px]" alt="Logo" />

@@ -38,7 +38,7 @@ const ContactForm = () => {
     return (
     
         <section className='w-full'>
-            <div className='bg-cover bg-center bg-no-repeat'>
+            <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='bg-cover bg-center bg-no-repeat'>
                 <div className='bg-white/20 backdrop-blur-lg flex flex-col items-center justify-center py-20'>
                     <div className='w-full max-w-6xl flex flex-col items-center justify-center gap-10 p-5'>
                         <SectionTitle 
@@ -74,7 +74,7 @@ const ContactForm = () => {
                                     <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='text-md'>{result}</motion.p>
                                 </form>
                             </div>
-                            <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='text-center'>
+                            <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='text-center bg-white rounded-2xl'>
                                 <img src={assets.formImg.src} className='w-full max-w-[90%]' alt='Get in touch' />
                             </motion.div>
                         </div>
