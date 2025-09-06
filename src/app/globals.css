@@ -42,11 +42,6 @@ body {
   background-size: 800% 800%;
 }
 
-::selection{
-  color: #ffffff;
-  background: linear-gradient(270deg, #000080, #4169E1, #191970);
-}
-
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -77,11 +72,6 @@ body {
   }
 }
 
-.wave-hover:hover {
-  animation: wave 1s ease-in-out;
-  transform-origin: bottom right;
-}
-
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -93,6 +83,32 @@ body {
     transform: translateY(0);
   }
 }
+
+@keyframes auroraFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #000080;
+}
+
+
+.wave-hover:hover {
+  animation: wave 1s ease-in-out;
+  transform-origin: bottom right;
+}
+
 
 .animate-slideDown {
   animation: slideDown 0.3s ease forwards;
@@ -109,20 +125,6 @@ body {
 .button:hover {
   background: linear-gradient(to right bottom, #1c398e, #000);
   transition: 0.8s all ease-in-out;
-}
-
-@keyframes auroraFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .bg-rgb {
@@ -192,4 +194,3 @@ body {
   -webkit-backface-visibility: hidden;
   transform: translateZ(0);
 }
-
