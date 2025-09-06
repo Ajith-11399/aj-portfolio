@@ -65,8 +65,8 @@ export default function Homepage() {
                     <div className='bg-white/25 backdrop-blur-xl w-full p-5 flex items-center justify-center'>
                         <div className='py-[100px]'>
                             <div className="w-full flex items-center justify-center">
-                                <div className="flex flex-col lg:flex-row items-center justify-center gap-10 text-center lg:text-left">
-                                    <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='px-5'>
+                                <div className="flex flex-col lg:flex-row items-center justify-center gap-10 text-left">
+                                    <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className=''>
                                         <img src={assets.overviewImg.src} alt="" className="rounded-lg shadow-lg w-full sm:w-[400px]" />
                                     </motion.div>
                                     <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}}>
@@ -107,7 +107,7 @@ export default function Homepage() {
                                          project.projectStatus === 'completed' 
                                         ?(  
                                             <Link key={project.id} href={`/projects/${project.slug}`} style={{backgroundImage: `url(${project.image.src})`}} className={project.boxClass}>
-                                                 <div className='absolute inset-0 bg-white/30 backdrop-blur-[1px] bg-gradient-to-t from-white via-white/10 to-transparent'></div>
+                                                 <div className='absolute inset-0 bg-white/30 backdrop-blur-[1px] bg-gradient-to-t from-white via-white/60 to-transparent'></div>
                                                  <div className='absolute bottom-0 p-10 z-10'>
                                                      <p className='text-xl font-semibold text-black'>{project.name}</p>
                                                      <p className={`${project.descClass} text-md font-medium leading-tight`}>{project.desc.length > 100 ? project.desc.slice(0, 80)+'...' : ''}</p>

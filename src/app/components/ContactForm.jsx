@@ -41,10 +41,12 @@ const ContactForm = () => {
             <div style={{backgroundImage: `url(${assets.homeHeroSectionImg.src})`}} className='bg-cover bg-center bg-no-repeat'>
                 <div className='bg-white/20 backdrop-blur-lg flex flex-col items-center justify-center py-20'>
                     <div className='w-full max-w-6xl flex flex-col items-center justify-center gap-10 p-5'>
-                        <SectionTitle 
-                            title='Stay Get in Touch' 
-                            subTitle='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quos beatae quo impedit voluptatem cumque rerum, debitis necessitatibus eius sint amet tempore fugiat similique iusto nam velit, quis labore sit.' 
-                        />
+                        <div className='mb-10'>
+                            <SectionTitle 
+                                title='Stay Get in Touch' 
+                                subTitle='Have a project in mind or just want to say hello? I’d love to hear from you. Whether it’s about collaboration, opportunities, or questions, feel free to drop me a message and I’ll get back to you as soon as possible.' 
+                            />
+                        </div>
                         <div className='w-full flex flex-col lg:flex-row items-start justify-center gap-10'>
                             <div className='w-full border p-5 rounded-xl'>
                                 <form className='max-w-2xl mx-auto' onSubmit={onSubmitHandler}>

@@ -10,7 +10,7 @@ const SectionTitle = ({ id, title, subTitle }) => {
     return (
 
         <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.6, delay: 0.3}} className='w-full max-w-6xl flex flex-col items-center text-center px-5'>
-            <p className={`text-4xl ${textSize} ${project} font-medium drop-shadow-lg`}>
+            <p className={`text-3xl ${textSize} ${project} font-medium drop-shadow-lg`}>
                 {title}
             </p>
             <p className='text-base text-black/70 max-w-3xl pt-5'>

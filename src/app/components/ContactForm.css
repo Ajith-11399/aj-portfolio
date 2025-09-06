@@ -20,14 +20,12 @@ textarea:focus {
     border-color: #172554;
 }
 
-/* Floating label */
 label,
 .file-label {
     position: absolute;
     left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
-    /* background-color: white; */
     padding: 0 0.25rem;
     color: #aaa;
     font-size: 1rem;
